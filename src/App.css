@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color:yellow;
+  color: red;
+}
+.nav-links{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  
+}
+.footer{
+  display: flex;
+   justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color:yellow;
+  color: red;
+  position: fixed;
+  bottom:0 ;
+  width: 100%;
+  
+}
+
+.about{
+  background: url(images/dast.jpg) ;
+  background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+
+.login{
+  background-color: red;
+}
+.lable{
+  background-color: red;
+}
