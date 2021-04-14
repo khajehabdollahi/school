@@ -53,8 +53,12 @@ app.post('/api/v1/school', async (req, res) => {
 // SAVE USER INTO DATABASE
 app.post('/api/v1/users', async (req, res) => {
   let newUser= new User({
-          username: req.body.username}),
-          passWord = req.body.password;
+    email:req.body.email,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    phoneNumber: req.body.phoneNumber}),
+    passWord = req.body.password;
+
   await User.register(newUser, passWord, (err, user) => {
     if(err){
       return res.status(404).send(err.message);
@@ -64,6 +68,25 @@ app.post('/api/v1/users', async (req, res) => {
       });
     }
   }); 
+});
+
+
+app.post('/login', async (req, res, next) => {  
+  await passport.authenticate('local', (err, user, info) => { 
+    if (err) { 
+      return next(err); 
+    } 
+    if (!user) { 
+      return res.status(404).send("Username or Password incorrect!"); 
+    } 
+    req.logIn(user, (err) => { 
+      if (err) { 
+        return next(err); 
+      } 
+      return res.status(200)
+        .send({id: user._id, username: user.username, role: user.role}); 
+    }); 
+  })(req, res, next); 
 });
   
 
