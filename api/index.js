@@ -51,9 +51,9 @@ app.post('/api/v1/school', async (req, res) => {
 })
 
 // SAVE USER INTO DATABASE
-app.post('/api/v1/users', async (req, res) => {
+app.post('/register', async (req, res) => {
   let newUser= new User({
-    email:req.body.email,
+    username:req.body.username,
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     phoneNumber: req.body.phoneNumber}),

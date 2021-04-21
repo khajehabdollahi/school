@@ -5,7 +5,7 @@ import About from './About';
 import Footer from './Footer';
 import Login from './Login';
 import Search from './Search';
-import Create from './Create';
+import Register from './Register';
 import SchoolForm from './SchoolForm';
 import W from './W3';
 
@@ -20,7 +20,7 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/logIn" component={Login}/>
-          <Route path="/register" component={Create}/> 
+          <Route path="/register" component={Register}/> 
           <Route path="/schoolform" component={SchoolForm}/> 
           <Route path="/search" component={Search}/> 
           <Route path="/w" component={W}/> 
