@@ -37,16 +37,17 @@ function Login(props) {
   }
   return (
     <div className="login">
+      <h1>here you can  logg in </h1>
       
-      <Form inline>
+      <Form >
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
-        <Label for="exampleEmail" className="mr-sm-2">Email</Label>
+        <Label for="exampleEmail" className="mr-sm-2">Email</Label><br/>
         <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="examplePassword" className="mr-sm-2">Password</Label>
         <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" />
-      </FormGroup>
+      </FormGroup><br/>
       <Button>Submit</Button>
     </Form>
         

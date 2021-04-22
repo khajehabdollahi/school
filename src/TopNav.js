@@ -32,7 +32,10 @@ const Navb = (props) => {
               <NavLink href="/logIn">Log In</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/createAccount">Create Account</NavLink>
+              <NavLink href="/Register">Create Account</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/schoolform">Write School Information</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/search">Search Schools</NavLink>

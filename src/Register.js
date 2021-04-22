@@ -41,7 +41,7 @@ const Register = (props) => {
           <Label for="Email" className="mr-sm-2">Email</Label>
             <Input type="text" name="email" id="Email" placeholder="something@idk.cool"
               value={username} onChange={e=>setUsername(e.target.value)}/>
-        </FormGroup>
+        </FormGroup> <br/>
         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
           <Label for="Password" className="mr-sm-2">Password</Label>
           <Input type="password" name="password" id="Password" placeholder="don't tell!"
