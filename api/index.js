@@ -51,7 +51,7 @@ app.post('/api/v1/school', async (req, res) => {
 })
 
 // SAVE USER INTO DATABASE
-app.post('/register', async (req, res) => {
+app.post('/api/register', async (req, res) => {
   let newUser= new User({
     username:req.body.username,
     firstName: req.body.firstName,
@@ -71,7 +71,7 @@ app.post('/register', async (req, res) => {
 });
 
 
-app.post('/login', async (req, res, next) => {  
+app.post('/api/login', async (req, res, next) => {  
   await passport.authenticate('local', (err, user, info) => { 
     if (err) { 
       return next(err); 

@@ -97,7 +97,7 @@ const SchoolForm = (props) => {
                 </label>
             </div>
          <FormGroup>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Submit</Button> <br/>
       </FormGroup>
     </Form>
   )

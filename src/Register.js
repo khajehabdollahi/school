@@ -15,7 +15,7 @@ const Register = (props) => {
       password
     }
     
-    await fetch('/register', {
+    await fetch('/api/register', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
