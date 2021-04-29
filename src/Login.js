@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import ForgetPassword from './ForgetPassword';
 import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
 
 
@@ -65,13 +66,19 @@ function Login(props) {
         <Input type="password" onChange={handleChange} name="password" id="examplePassword" placeholder="don't tell!" />
       </FormGroup><br/>
       <Button>Submit</Button>
-            </Form>
+            </Form> <br/><br/>
+
+            <a href="http://localhost:3000/resetyourpassword" > <h2  >Forgot your password?</h2></a> <br/><br/>
+            
+            
+
        </Col>
             </Row>
-          
+      
+        
         </Container>
         
-     
+ 
     </div>
   );
 }

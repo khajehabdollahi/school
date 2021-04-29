@@ -7,7 +7,7 @@ import Login from './Login';
 import Search from './Search';
 import Register from './Register';
 import SchoolForm from './SchoolForm';
-import W from './W3';
+import ForgetPassword from './ForgetPassword';
 
 import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 
@@ -23,7 +23,8 @@ function App() {
           <Route path="/register" component={Register}/> 
           <Route path="/schoolform" component={SchoolForm}/> 
           <Route path="/search" component={Search}/> 
-          <Route path="/w" component={W}/> 
+          <Route path="/resetyourpassword" component={ForgetPassword}/> 
+          
         </Switch> 
          <Footer />
       </div>

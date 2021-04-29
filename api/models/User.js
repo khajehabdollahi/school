@@ -6,8 +6,13 @@ let userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    password: String
-});
+    password: String,
+    activated: {
+        type: Boolean,
+        default:false
+    }
+}
+);
 
 //userSchema.plugin(passportLocalMongoose, { usernameField : 'email'});
 userSchema.plugin(passportLocalMongoose);
