@@ -9,6 +9,8 @@ import Register from './Register';
 import SchoolForm from './SchoolForm';
 import ForgetPassword from './ForgetPassword';
 
+
+
 import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 
 function App() {

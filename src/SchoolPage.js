@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 
-export default class SchoolPage extends Component {
-  render() {
-    return (
-      <div>
-        <h1>here is your School Page</h1>
-      </div>
-    )
-  }
-}
+const api = axios.create({
+ baseURL: 'http://localhost:5000'
+})

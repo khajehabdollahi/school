@@ -34,17 +34,11 @@ mongoose.connect('mongodb://localhost:27017/' + db, {
   useFindAndModify: false
 });
 
-app.use(  (req, res,next)=> {
-  const { password } = req.query
-  if (password == 1) {
-    res.send('1')
-    next()
-  }else
- res.send('You need a Password')
- 
-})
+const verify = () => {
+  
+}
 
-app.get('/dog', (req, res) => {
+app.get('/dog',verify, (req, res) => {
   res.send('dog')
 })
 
@@ -147,6 +141,11 @@ app.get('/',  (req, res)=> {
 })
 
 //Rset Password schoolreset@gmail.com Asdf!1234
+
+app.get('/school/:id', async (req, res) => {
+  
+  res.render('src/SchoolPage')
+})
 
   
 
