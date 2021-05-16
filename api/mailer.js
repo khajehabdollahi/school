@@ -14,7 +14,7 @@ module.exports= async function main(to,subject,text) {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'noreplayschoolnoreplay@gmail.com',
-      pass: 'Magistrat43A!'
+      pass: 'Zxcv!1234!'
     },
   });
 

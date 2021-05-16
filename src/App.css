@@ -25,7 +25,7 @@ nav{
   min-height: 8vh;
   background-color:yellow;
   color: red;
-  position: fixed;
+  position: fixed-bottom;
   bottom:0 ;
   width: 100%;
   
